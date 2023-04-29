@@ -1,0 +1,116 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="PreguntasRecursos\pregunta1.jpg" />
+    <None Remove="PreguntasRecursos\pregunta10.jpg" />
+    <None Remove="PreguntasRecursos\pregunta11.jpg" />
+    <None Remove="PreguntasRecursos\pregunta12.jpg" />
+    <None Remove="PreguntasRecursos\pregunta2.jpg" />
+    <None Remove="PreguntasRecursos\pregunta3.jpg" />
+    <None Remove="PreguntasRecursos\pregunta4.jpg" />
+    <None Remove="PreguntasRecursos\pregunta5.jpg" />
+    <None Remove="PreguntasRecursos\pregunta6.jpg" />
+    <None Remove="PreguntasRecursos\pregunta7.jpg" />
+    <None Remove="PreguntasRecursos\pregunta8.jpg" />
+    <None Remove="PreguntasRecursos\pregunta9.jpg" />
+    <None Remove="Recursos\bot.png" />
+    <None Remove="Recursos\cabra.png" />
+    <None Remove="Recursos\circulo.png" />
+    <None Remove="Recursos\code.png" />
+    <None Remove="Recursos\cuadrado.png" />
+    <None Remove="Recursos\desarrollador.png" />
+    <None Remove="Recursos\dev.png" />
+    <None Remove="Recursos\estrellas.gif" />
+    <None Remove="Recursos\etiqueta.png" />
+    <None Remove="Recursos\foco.png" />
+    <None Remove="Recursos\foco2.png" />
+    <None Remove="Recursos\gato.png" />
+    <None Remove="Recursos\hombre.png" />
+    <None Remove="Recursos\inge %281%29.png" />
+    <None Remove="Recursos\inge.png" />
+    <None Remove="Recursos\mariposa.png" />
+    <None Remove="Recursos\muñeca.png" />
+    <None Remove="Recursos\ovalo.png" />
+    <None Remove="Recursos\pajaro.png" />
+    <None Remove="Recursos\perro.png" />
+    <None Remove="Recursos\plan.png" />
+    <None Remove="Recursos\planeta.gif" />
+    <None Remove="Recursos\rueda.png" />
+    <None Remove="Recursos\sir.png" />
+    <None Remove="Recursos\tren.png" />
+    <None Remove="Recursos\triangulo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="PreguntasRecursos\pregunta1.jpg">
+      <CustomToolNamespace>pregunta1</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreguntasRecursos\pregunta10.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta11.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta12.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta2.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta3.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta4.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta5.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta6.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta7.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta8.jpg" />
+    <EmbeddedResource Include="PreguntasRecursos\pregunta9.jpg" />
+    <EmbeddedResource Include="Recursos\bot.png" />
+    <EmbeddedResource Include="Recursos\code.png" />
+    <EmbeddedResource Include="Recursos\desarrollador.png" />
+    <EmbeddedResource Include="Recursos\dev.png" />
+    <EmbeddedResource Include="Recursos\estrellas.gif" />
+    <EmbeddedResource Include="Recursos\etiqueta.png" />
+    <EmbeddedResource Include="Recursos\foco.png" />
+    <EmbeddedResource Include="Recursos\foco2.png" />
+    <EmbeddedResource Include="Recursos\inge (1).png" />
+    <EmbeddedResource Include="Recursos\inge.png" />
+    <EmbeddedResource Include="Recursos\plan.png" />
+    <EmbeddedResource Include="Recursos\planeta.gif" />
+    <EmbeddedResource Include="Recursos\rueda.png" />
+    <EmbeddedResource Include="Recursos\sir.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
